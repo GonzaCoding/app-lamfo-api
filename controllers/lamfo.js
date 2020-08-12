@@ -13,13 +13,6 @@ function getTorneoStr(id){
 }
 
 module.exports = {
-    index: (req,res,next) => {
-        console.log("indexxxxxxxx");
-        res.json({
-            status: "success",
-            message: "okiii"
-        });
-    },
     getTop10: (req,res,next) => {
         request('http://www.lamfo.club/', (err,resp,body)=>{
             if(!err && resp.statusCode == 200){
