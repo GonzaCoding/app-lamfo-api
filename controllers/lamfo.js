@@ -32,7 +32,7 @@ module.exports = {
                 
                     manager = {
                         posicion: parseInt($(this).children().eq(1).html()), //posicion
-                        nombre: $(this).children().eq(3).html(), //nombre
+                        nombre: $(this).children().eq(3).text(), //nombre
                         puntos: parseInt($(this).children().eq(4).text().split(' ', 1)), //puntos
                         imagenes
                     };
