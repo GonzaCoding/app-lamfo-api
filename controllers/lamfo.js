@@ -117,12 +117,12 @@ module.exports = {
                         for (let i = 0; i < locales.length ; i++){
                             resultados.push({
                                 local: {
-                                    escudo: escudos[i*2].attribs.src,
+                                    escudo: escudos[i*2].attribs.src.replace("_l.png","_s.png"),
                                     nombre: locales.eq(i).text(),
                                     goles: goles.eq(i*2).html() ,
                                 } ,
                                 visitante: {
-                                    escudo: escudos[i*2+1].attribs.src,
+                                    escudo: escudos[i*2+1].attribs.src.replace("_l.png","_s.png"),
                                     nombre: visitantes.eq(i).text() ,
                                     goles: goles.eq(i*2+1).html(),
                                 },
